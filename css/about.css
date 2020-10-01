@@ -1,0 +1,39 @@
+.main {
+    background-image: linear-gradient(to left, rgba(255, 255, 255, .8), rgba(254, 244, 234, .8)), url("../img/about.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.about {
+    padding: 10rem;
+}
+
+.about__title {
+    font-size: 7rem;
+    text-align: left;
+}
+
+/*CARD*/
+
+.cards {
+    max-width: 90rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.about__card {
+    max-width: 30rem;
+    margin: 5rem 3rem;
+}
+
+.card__title {
+    font-size: 2rem;
+    text-align: left;
+    color: var(--main-blue-dark);
+}
+
+.card__description {
+    font-size: 1.5rem;
+}

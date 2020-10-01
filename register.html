@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="css/fontawesome-free-5.14.0-web/css/all.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.14.0-web/css/fontawesome.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.14.0-web/css/regular.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.14.0-web/css/solid.css">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="header__link">
+            <img src="img/logo.png" alt="Logo" class="header__logo">
+        </a>
+        <nav class="header-nav">
+            <ul class="nav__items">
+                <li class="nav__item">
+                    <a cla href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a cla href="about.html" class="nav__link">Nuestra escuela</a>
+                </li>
+                <li class="nav__item">
+                    <a cla href="contact.html" class="nav__link">Contacto</a>
+                </li>
+                <li class="nav__item">
+                    <a cla href="sedes.html" class="nav__link">Sedes</a>
+                </li>
+                <li class="nav__item">
+                    <a cla href="alumnos.html" class="nav__link">Nuestros Alumnos</a>
+                </li>
+                <li class="nav__item">
+                    <a cla href="#" class="nav__link">Registrarse</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="register">
+        <div class="content">
+            <h1 class="main-title">Formulario de Registro</h1>
+    
+            <form action="register.html" method="post" class="register-form">
+                <div class="register-form__boxes">
+                    <div class="register-form__box1">
+                        <label for="name">Nombres: </label>
+                        <input type="text" name="name" id="name" placeholder="Ingrese su nombre aquí">
+            
+                        <label for="surname">Apellido: </label>
+                        <input type="text" name="surname" id="surname" placeholder="Ingrese su apellido aquí">
+                        
+                        <label for="calle">Calle: </label>
+                        <input type="text" name="calle" id="calle" placeholder="Ingrese la calle donde vive">
+                        
+                        <label for="numero">Número: </label>
+                        <input type="text" name="numero" id="numero" placeholder="Ingrese el número de su dirección">
+                        
+                        <label for="ciudad">Ciudad: </label>
+                        <input type="text" name="ciudad" id="ciudad" placeholder="C.A.B.A.">
+                    </div>
+        
+                    <div class="register-form__box2">
+                        <label for="codigo-postal">Código Postal: </label>
+                        <input type="text" name="cp" id="codigo-postal">
+                        
+                        <label for="telefono">Teléfono: </label>
+                        <input type="tel" name="telefono" id="telefono">
+                        
+                        <label for="fec-nac">Fecha de Nacimiento: </label>
+                        <input type="date" name="fec-nac" id="fec-nac">
+                        <label for="email">Email: </label>
+                        
+                        <input type="email" name="email" id="email">
+                        
+                        <label for="password">Clave: </label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                </div>
+    
+                <label for="link">Link del TP: </label>
+                <input type="url" name="link" id="link">
+                
+                <label for="genero">Género: </label>
+                <input type="radio" name="genero" id="genero" value="male"><span class="radio-text">Masculino</span>
+                <input type="radio" name="genero" id="genero" value="female"><span class="radio-text">Femenino</span><br>
+    
+                <label for="level">Level: </label>
+                <select name="level" class="register-form__level" id="level">
+                    <option value="principiante">Principiante</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="avanzado">Avanzado</option>
+                </select>
+        
+                <div class="register-form__comments">
+                    <label for="comments">Comentarios:</label>
+                    <textarea name="comments" class="register-form__comments-box" id="comments" cols="60" rows="8"></textarea>
+                </div>
+        
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <section class="contact">
+            <nav class="contact-list">
+                <ul class="contact__items">
+                    <li class="contact__item">
+                        <h3 class="contact__title contact__title">
+                            Conéctate con Nosotros
+                        </h3>
+                    </li>
+                    <li class="contact__item">
+                        <i class="fas fa-phone-alt fa-2x"></i>
+                        <span class="contact__number">Telefono: 15-6346-7547</span>
+                    </li>
+                    <li class="contact__item">
+                        <i class="far fa-envelope fa-2x"></i>
+                        <span class="contact__email">Email: chessclub@gmail.com</span>
+                    </li>
+                </ul>
+            </nav>
+        
+            <nav class="recursos">
+                <ul class="recursos__items">
+                    <li class="recursos__item">
+                        <h3 class="contact__title recursos__title">
+                            Nuestras Clases
+                        </h3>
+                    </li>
+                    <li class="recursos__item">
+                        <span class="recursos">Presenciales</span>
+                    </li>
+                    <li class="recursos__item">
+                        <span class="recursos">Videoconferencia</span>
+                    </li>
+                    <li class="recursos__item">
+                        <span class="recursos">A Través de Nuestra App</span>
+                    </li>
+                </ul>
+            </nav>
+        
+            <nav class="subnavbar">
+                <ul class="contact__items">
+                    <li class="contact__item">
+                        <h3 class="contact__title contact__title">Más de Chess Club</h3>
+                    </li>
+                    <li class="contact__item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="about.html">Nuestra Escuela</a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="contact.html">Contacto</a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="sedes.html">Sedes</a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="alumnos.html">Nuestros Alumnos</a>
+                    </li>
+                    <li class="contact__item">
+                        <a href="register.html">Registrarse</a>
+                    </li>
+                </ul>
+            </nav>
+        
+            <nav class="social-media">
+                <h3 class="contact__title social-media__title">Nuestras Redes</h3>
+                <ul class="social-media__items">
+                    <li class="social-media__item"><a href="https://www.facebook.com"><i
+                                class="fab fa-facebook-square fa-2x"></i></a></li>
+                    <li class="social-media__item"><a href="https://www.twitter.com"><i
+                                class="fab fa-twitter-square fa-2x"></i></a></li>
+                    <li class="social-media__item"><a href="https://www.instagram.com"><i
+                                class="fab fa-instagram fa-2x"></i></a></li>
+                    <li class="social-media__item"><a href="https://www.youtube.com"><i class="fab fa-youtube fa-2x"></i></a>
+                    </li>
+                </ul>
+                <h3 class="contact__title contact-app__title">
+                    Descarga Nuestra App
+                </h3>
+                <ul class="social-media__items">
+                    <li class="social-media__item"><a href="#"><i class="fab fa-android fa-2x"></i></a></li>
+                    <li class="social-media__item"><a href="#"><i class="fab fa-apple fa-2x"></i></a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+    
+    <footer id="footer">
+        <p class="footer__copyright">Todos los derechos reservados @2020</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+
+body {
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.register {
+    margin-top: 1rem;
+    padding: 2rem;
+}
+
+.content {
+    padding: 10rem 5rem;
+}
+
+.register-title {
+    text-align: center;
+}
+
+.register-form {
+    padding: 1rem;
+}
+
+.register-form__boxes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.register-form__box1,
+.register-form__box2 {
+    width: 48%;
+}
+
+label {
+    font-size: 1.5rem;
+}
+
+.register-form label, 
+.register-form input {
+    font-weight: 400;
+    display: block;
+    margin-top: .8rem;
+    width: 100%;
+}
+
+.register-form input {
+    height: 4.5rem;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: .5rem;
+    
+}
+
+.register-form label[for=link] {
+    margin-top: 2rem;
+}
+
+
+/* Radio buttons (Genre) */
+
+.register-form input[id=genero],
+.register-form label[for=genero] {
+    margin-top: 2rem;
+    height: 1rem;
+    width: 5rem;
+    display: inline-block;
+    width: auto;
+}
+
+.radio-text {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: .3rem;
+}
+
+
+/* Level options */
+
+.register-form label[for=level] {
+    display: inline-block;
+    width: auto;
+    margin-top: 2rem;
+}
+
+.register-form select {
+    margin-left: .5rem;
+    width: 20%;
+    padding: .2rem;
+}
+
+/* Comments box */
+
+.register-form__comments{
+    margin-top: 2rem;
+}
+
+.register-form__comments-box{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+
+/* Submit Button */
+
+.register-form input[type=submit] {
+    margin: 2rem auto;
+    text-align: center;
+    width: 50%;
+    background-color: var(--main-blue-dark);
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+

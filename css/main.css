@@ -1,0 +1,262 @@
+.main-header {
+    background-image: linear-gradient(to left, rgba(84, 121, 128, .8), rgba(59, 131, 189, .8)), url("../img/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+}
+
+.main-nav {
+    height: 7rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.main-header__logo {
+    height: 5rem;
+    margin-left: 1rem;
+}
+
+
+/* Menú */
+.main-header__nav {
+}
+
+
+/* Título */
+
+.header__text-box {
+    width: 80%;
+
+    /*Centro el div del título*/
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.main-title {
+    font-size: 6.5rem;
+    letter-spacing: .5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #E5FCC2;
+    
+}
+
+.sub-title {
+    font-size: 3rem;
+    letter-spacing: 1rem;
+    color: #E5FCC2;
+}
+
+
+/* SECTION ABOUT */
+
+.section-about {
+    padding: 6rem 0;
+    background-color: #fff;
+}
+
+
+.about__images {
+    margin-top: 15rem;
+}
+
+.about__description {
+    position: relative;
+    margin-top: 5rem;
+}
+
+.about__image {
+    display: block;
+    position: absolute;
+    
+    max-width: 45rem;
+    width: 35rem;
+    border-radius: 1rem;
+}
+
+.about__image--1 {
+    left: 0;
+    top: 0;
+}
+
+.about__image--2 {
+    left: 0rem;
+    top: 10rem;
+}
+
+.about__image--3 {
+    left: 15rem;
+    top: 5rem;
+}
+
+
+.about__description {
+    background-color: #fff;
+}
+
+.description__title {
+    margin: 1rem 0;
+    text-align: right;
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+    line-height: 3.6rem;
+}
+
+.clase__title {
+    font-size: 2rem;
+    text-align: right;
+    margin-top: 2rem;
+    text-transform: capitalize;
+    word-spacing: .4rem;
+    letter-spacing: .2rem;
+    color: #3B83BD;
+}
+
+.clase__description {
+    line-height: 1.5;
+    font-size: 1.4rem;
+    text-align: right;
+    letter-spacing: .1rem;
+}
+
+
+
+/*Media Query*/
+
+@media only screen and (max-width: 768px) {
+
+    .main-header__logo {
+    display: none;
+    }
+
+
+    /* Menú */
+    .main-header__nav {
+        width: 100%;
+    }
+
+    .main-nav__items {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .main-nav__item {
+        flex: 1;
+    }
+    
+    .nav__link {
+        color: #fff;
+        font-weight: normal;
+        font-size: 1.2rem;
+    }
+
+
+    /* SECTION ABOUT */
+
+    .section-about {
+        margin: 5rem 0;
+    }
+
+    .about__images {
+        display: none;
+    }
+
+    .about__image {
+        position: static;
+        
+        max-width: 20rem;
+    }
+
+    .description__title {
+        text-align: left;
+    }
+
+    .clase__title {
+        text-align: left;
+    }
+
+    .clase__description {
+        text-align: left;
+    }
+
+    .about__description {
+        background-color: #fff;
+    }
+
+    /* Contact */
+    .contact {
+        margin: 0;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 5rem;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-list {
+        flex: 0 0 40%;
+    }
+    
+    .recursos {
+        flex: 0 0 40%;
+    }
+    
+    .subnavbar {
+        flex: 0 0 40%;
+        
+    }
+    
+    .social-media {
+        flex: 1;
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+
+    .header__text-box {
+        margin-top: 7rem;
+    }
+    
+    .main-nav__items {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-nav__item {
+        width: 100%;
+        padding: .3rem;
+        background-color: black;
+    }
+
+    .main-nav__item a {
+        color: #fff;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact > * {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    #footer {
+        width: 100%;
+    }
+    
+}

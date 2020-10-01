@@ -1,0 +1,39 @@
+main {
+    padding-top: 10rem;
+}
+
+.carousel-item img {
+    max-height: 45rem ;
+}
+
+.carousel-caption h5 {
+    font-size: 5rem;
+}
+
+.carousel-caption p {
+    font-size: 2.5rem;
+}
+
+
+/* Table */
+
+.sedes__table {
+    width: 90%;
+    margin: 10rem auto;
+}
+
+th {
+    font-size: 2rem;
+    color: var(--main-blue-dark);
+}
+
+.address {
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    max-width: 40rem;
+}
+
+tr:not(:last-child) {
+    margin-bottom: 1rem;
+}

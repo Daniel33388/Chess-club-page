@@ -1,0 +1,13 @@
+.content {
+    min-height: 60vh;
+    padding: 10rem 5rem;
+}
+
+.content__title {
+    text-align: left;
+}
+
+.content__description {
+    font-size: 2rem;
+    text-align: left;
+}
