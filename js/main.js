@@ -39,12 +39,18 @@ let mainFooter = `<p class="footer__copyright">Todos los derechos reservados @20
 // header.innerHTML = mainHeader; 
 footer.innerHTML = mainFooter;
 
-// Cliqueo el icono hamburguer y se despliega el menú.
-// let menuIcon = document.querySelector('.icon');
-// let menu = document.querySelector('.main-header__nav');
+// Cliqueo el icono de menú y se despliega el menú y la pantalla en negro.
+let backdrop = document.querySelector('.backdrop');
+let menuIcon = document.querySelector('.icon');
+let menu = document.querySelector('.main-header__nav');
 
 
-// menuIcon.addEventListener('click', () => {
-//   menuIcon.classList.toggle('display');  
-//   menu.classList.toggle('display');  
-// })
+menuIcon.addEventListener('click', addDisplayClass);
+backdrop.addEventListener('click', addDisplayClass);
+
+
+function addDisplayClass() {
+    menuIcon.classList.toggle('display');  
+    menu.classList.toggle('display');
+    backdrop.classList.toggle('display');
+}
