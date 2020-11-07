@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 :root {
     --main-black: #191919;
     --main-blue-light: #547980 ;
@@ -43,7 +43,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--main-blue-dark);
+    background-color: #fff;
     z-index: 100;
 }
 
@@ -82,14 +82,16 @@ body {
 
 .nav__link {
     font-size: 1.6rem;
+    font-family: 'Montserrat', serif;
     font-weight: 700;
+    letter-spacing: .1rem;
     text-decoration: none;
-    color: black;
+    color: #222;
     cursor: pointer;
 }
 
 .nav__link:hover {
-    color: #fff;
+    color: rgba(34, 34, 34, .5);
     text-decoration: none;
 }
 
@@ -102,7 +104,10 @@ body {
 }
 
 .nav__item--cta a {
-    font-weight: 700;
+    color: #fff;
+}
+
+.nav__item--cta .nav__link:hover {
     color: #fff;
 }
 
@@ -125,6 +130,8 @@ body {
 
 .main-title {
     text-align: center;
+    font-family: 'Libre Baskerville', serif;
+
     font-size: 4rem;
     letter-spacing: .5rem;
     color: var(--main-blue-dark);
@@ -144,7 +151,7 @@ body {
 .contact {
     padding: 4rem 3rem;
     width: 100%;
-    background-color: var(--main-white);
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -229,9 +236,6 @@ body {
 .contact-app__title {
     margin-top: 2rem;
 }
-
-
-
 
 
 /*FOOTER*/

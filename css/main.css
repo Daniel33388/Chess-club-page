@@ -149,7 +149,6 @@
     font-weight: 700;
     text-transform: uppercase;
     color: #E5FCC2;
-    
 }
 
 .sub-title {
@@ -231,33 +230,23 @@
 }
 
 
+/* Backdrop */
+.backdrop {
+    position: fixed;
+    z-index: 150;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background: rgba(0, 0, 0, .5);
+}
 
 /*Media Query - Tablet - Home Page*/
 
 @media only screen and (max-width: 768px) {
 
-    /* Menú */
-    .main-header__nav {
-        width: 100%;
-    }
-
-    .main-nav__items {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .main-nav__item {
-        flex: 1;
-    }
-    
-    .nav__link {
-        color: #fff;
-        font-weight: normal;
-        font-size: 1.2rem;
-    }
-
     /* SECTION ABOUT */
-
     .section-about {
         margin: 5rem 0;
     }
@@ -318,42 +307,64 @@
     
 }
 
-/* Backdrop */
-
-.backdrop {
-    position: fixed;
-    z-index: 150;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 100;
-    background: rgba(0,0,0,.5);
-}
-
+/* Media Query - Smartphones - Home Page */
 @media only screen and (max-width: 480px) {
-    .header__text-box {
-        margin-top: 7rem;
-    }
     
-    .main-nav__items {
+    /* Main Title */
+
+    .main-title {
+        font-size: 4rem;
+        letter-spacing: 1rem;
+    }
+
+    .sub-title {
+        font-size: 2.5rem;
+    }
+
+    /* Menu Section */
+    .main-header__nav-icon {
+        margin-right: 1rem;
+        min-width: 4rem;
+        min-height: 4rem;
+    }
+
+    .main-header__nav {
+        height: 100%;
+        width: 100%;
         position: absolute;
         top: 0;
-        width: 100%;
+        right: 0;
+        z-index: 100;
+
+    }
+
+    /* Menu list */
+
+    .main-nav__items {
         display: flex;
+        list-style: none;
         flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .main-nav__name {
+        height: 7rem;
+    }
+
+    .main-nav__name span {
+        line-height: 7rem;/* Center text vertically */
     }
 
     .main-nav__item {
-        width: 100%;
-        padding: .3rem;
-        background-color: black;
+        height: 5rem;
     }
 
-    .main-nav__item a {
-        color: #fff;
+    .main-nav__link {
+        line-height: 5rem; /* Center text vertically */
     }
 
+    /* Contact Section */
     .contact {
         display: flex;
         flex-direction: column;
